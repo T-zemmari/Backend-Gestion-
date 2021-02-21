@@ -1,9 +1,9 @@
-const moviesRoutes = require('express').Router();
+const routerFilms = require('express').Router();
 const movieController = require('../Controller/moviesController')
 const movieSchema = require('../models/moviesDb')
 
 // API routes
-moviesRoutes.get('/movies', async (req, res) => {
+routerFilms.get('/VideoClub/movie', async (req, res) => {
     try {
         res.json(await movieController.findAllFilms())
     }catch (err) {
@@ -14,7 +14,7 @@ moviesRoutes.get('/movies', async (req, res) => {
     }
 });
 
-moviesRoutes.get('/movies/:id',async (req, res) => {
+routerFilms.get('/VideoClub/movie:id',async (req, res) => {
     try {
         res.json(await movieController.findOne(req))
     }catch (err) {
@@ -24,12 +24,11 @@ moviesRoutes.get('/movies/:id',async (req, res) => {
     }
 });
 
-moviesRoutes.post('/movies',async (req, res) => {
+routerFilms.post('/VideoClub/movie',async (req, res) => {
     try{
         const id = await movieController.addFilm(new movieSchema(req.body));
         const status = 'success';
         res.json({status,id});
-
     } catch( error ){
         return res.sendStatus(500).json({
             message: 'Internal Server Error'
@@ -37,7 +36,7 @@ moviesRoutes.post('/movies',async (req, res) => {
     }
 })
 
-moviesRoutes.put('/movie:id',async (req,res) => {
+routerFilms.put('/VideoClub/update-movie:id',async (req,res) => {
     try{
         const id = req.params.id;
         res.json(await movieController.updateFilm(id,new movieSchema(req.body)));
@@ -48,7 +47,7 @@ moviesRoutes.put('/movie:id',async (req,res) => {
     }
 });
 
-moviesRoutes.delete('/remove-movie/:id', async (req, res) => {
+routerFilms.delete('/VideoClub/remove-movie/:id', async (req, res) => {
     try{
         const id = req.params.id;
         const status = 'deleted'
@@ -62,4 +61,4 @@ moviesRoutes.delete('/remove-movie/:id', async (req, res) => {
  
  });
 
-module.exports = moviesRoutes;
+module.exports = routerFilms;
