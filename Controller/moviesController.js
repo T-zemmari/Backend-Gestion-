@@ -1,6 +1,6 @@
 
 const mongoose = require('mongoose');
-const movie = require('../models/moviesDb');
+const Movie = require('../models/moviesDb');
 
 
 class Film {
@@ -9,35 +9,34 @@ class Film {
 
     }
 
-    //GET - Return all Films in the DB
+
 
     async findAllFilms(filmCollection){
-        return movie.find(filmCollection);
+        return Movie.find(filmCollection);
     };
 
-    //GET - Return a Film with specified ID
+   
 
     async findById({id: id}) {
-        return movie.findOne({id: id});
+        return Movie.findOne({id: id});
     };
 
-    //POST - Insert a new Film in the DB
-
-    async addFilm(film){
-       return movie.create(film)
+   
+    async addFilm(Peli){
+       return Movie.create(Peli)
     };
 
-    //PUT - Update a register already exists
+    
 
-    async updateFilm(id, film){
-        const idFound = movie.findOne({id: id})
-        return idFound.update(film)
+    async updateFilm(id, Peli){
+        const idFound = Movie.findOne({id: id})
+        return idFound.update(Peli)
     };
 
-    //DELETE - Delete a TVShow with specified ID
+  
 
     async deleteFilm({id: id}) {
-        const idFound = movie.findOne({id: id})
+        const idFound = Movie.findOne({id: id})
         return idFound.remove()
     };
 };
