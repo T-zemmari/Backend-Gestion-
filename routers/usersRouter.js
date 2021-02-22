@@ -28,9 +28,10 @@ routerUser.get('/VideoClub/user/:id',async (req, res) => {
 
 routerUser.post('/VideoClub/user',async (req, res) => {
    try{
+    let id1=req.params.id
         const id = await userController.addUser(new userSchema(req.body));
         const status = 'success';
-        res.json({status,id});
+        res.json({status,id1});
     } catch( error ){
         return res.sendStatus(500).json({
             message: 'Internal Server Error'
@@ -38,10 +39,11 @@ routerUser.post('/VideoClub/user',async (req, res) => {
    }
 })
 
-routerUser.put('/VideoClub/update-user:id',async (req,res) => {
+routerUser.put('/VideoClub/user/:id/update',async (req,res) => {
     try{
         const id = req.params.id;
-        res.json(await userController.updateUser(id,new userSchema(req.body)));
+        console.log(id)
+        res.json(await userController.updateUser(id,(req.body)));
     } catch( error ){
         return res.sendStatus(500).json({
             message: 'Internal Server Error'
@@ -49,9 +51,10 @@ routerUser.put('/VideoClub/update-user:id',async (req,res) => {
     }
 });
 
-routerUser.delete('/VideoClub/remove-user/:id', async (req, res) => {
+routerUser.delete('/VideoClub/user/:id/remove', async (req, res) => {
     try{
         const id = req.params.id;
+        console.log(id)
         const status = 'deleted'
         await userController.deleteUser(id);
         res.json({status,id});

@@ -22,13 +22,13 @@ class User {
         }
         //PUT (update an existing user)
     async updateUser(id, usuario) {
-            const idFound = user.findOne({ id: id })
-            return idFound.update(usuario)
+               
+     return user.findByIdAndUpdate(id,usuario)
         }
         //DELETE (delete a user by id)
-    async deleteUser({ id: id }) {
-        const idFound = user.findOne({ id: id })
-        return idFound.remove()
+    async deleteUser(id) {
+       
+        return user.findByIdAndRemove(id)
     }
 }
 

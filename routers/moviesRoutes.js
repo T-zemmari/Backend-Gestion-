@@ -14,9 +14,11 @@ routerFilms.get('/VideoClub/movie', async (req, res) => {
     }
 });
 
-routerFilms.get('/VideoClub/movie:id',async (req, res) => {
+routerFilms.get('/VideoClub/movie/:id',async (req, res) => {
     try {
-        res.json(await movieController.findById())
+        let id2=req.params.id
+        console.log(id2);
+        res.json(await movieController.findById(id2))
     }catch (err) {
         return res.sendStatus(500).json({
             message: 'Internal Server Error'
@@ -36,20 +38,24 @@ routerFilms.post('/VideoClub/movie',async (req, res) => {
     }
 })
 
-routerFilms.put('/VideoClub/movie',async (req,res) => {
-    try{
-        const id = req.params.id;
-        res.json(await movieController.updateFilm(id,new movieSchema(req.body)));
-    } catch( error ){
-        return res.sendStatus(500).json({
-            message: 'Internal Server Error'
-        });
-    }
-});
+routerFilms.put('/VideoClub/movie/:id/update',async (req,res) => {
+        try{
+           let id= req.params.id;
+           console.log(id)
+            res.json(await movieController.update(id,(req.body)));
+        } catch( error ){
+            return res.sendStatus(500).json({
+                message: 'Server Error'
+            });
+        }
+    });
+    
 
-routerFilms.delete('/VideoClub/remove-movie/:id', async (req, res) => {
+  
+routerFilms.delete('/VideoClub/movie/:id', async (req, res) => {
     try{
         const id = req.params.id;
+        console.log(id)
         const status = 'deleted'
         await movieController.deleteFilm(id);
         res.json({status,id});
