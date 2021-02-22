@@ -17,8 +17,8 @@ class Film {
 
    
 
-    async findById({id: id}) {
-        return Movie.findOne({id: id});
+    async findById({id=_id}) {
+        return Movie.findById({id});
     };
 
    
@@ -35,8 +35,8 @@ class Film {
 
   
 
-    async deleteFilm({id: id}) {
-        const idFound = Movie.findOne({id: id})
+    async deleteFilm({_id}) {
+        const idFound = Movie.findOne({_id})
         return idFound.remove()
     };
 };

@@ -12,8 +12,8 @@ class User {
     };
 
     //GET (return an user with id)
-    async findById({ id: id }) {
-        return user.findOne({ id: id });
+    async findById(id) {
+        return user.findById(id);
     }
 
     //POST (adding a new user)

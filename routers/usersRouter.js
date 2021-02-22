@@ -14,9 +14,11 @@ routerUser.get('/VideoClub/user', async (req, res) => {
     }
 });
 
-routerUser.get('/VideoClub/user:id',async (req, res) => {
+routerUser.get('/VideoClub/user/:id',async (req, res) => {
     try {
-        res.json(await userController.findById(req))
+       let id1=req.params.id
+       console.log(id1)
+        res.json(await userController.findById(id1))
     }catch (err) {
         return res.sendStatus(500).json({
             message: 'Internal Server Error'

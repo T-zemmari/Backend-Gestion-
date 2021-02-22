@@ -16,7 +16,7 @@ routerFilms.get('/VideoClub/movie', async (req, res) => {
 
 routerFilms.get('/VideoClub/movie:id',async (req, res) => {
     try {
-        res.json(await movieController.findOne(req))
+        res.json(await movieController.findById())
     }catch (err) {
         return res.sendStatus(500).json({
             message: 'Internal Server Error'
@@ -36,7 +36,7 @@ routerFilms.post('/VideoClub/movie',async (req, res) => {
     }
 })
 
-routerFilms.put('/VideoClub/update-movie:id',async (req,res) => {
+routerFilms.put('/VideoClub/movie',async (req,res) => {
     try{
         const id = req.params.id;
         res.json(await movieController.updateFilm(id,new movieSchema(req.body)));
