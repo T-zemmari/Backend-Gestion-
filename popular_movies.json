@@ -1,0 +1,401 @@
+[
+        {
+            "adult": false,
+            "backdrop_path": "/oSSEcPDfwgZSv2i01Oqxdb9t8fI.jpg",
+            "genre_ids": [
+                28,
+                12,
+                35,
+                14
+            ],
+            "id": 621870,
+            "original_language": "en",
+            "original_title": "Secret Society of Second Born Royals",
+            "overview": "Sam is a teenage royal rebel, second in line to the throne of the kingdom of Illyria. Just as her disinterest in the royal way of life is at an all-time high, she discovers she has super-human abilities and is invited to join a secret society of similar extraordinary second-born royals charged with keeping the world safe.",
+            "popularity": 136.477,
+            "poster_path": "/xOmGTJtBgRVSAF4S5dZEUqHqyy5.jpg",
+            "release_date": "2020-07-17",
+            "title": "Secret Society of Second Born Royals",
+            "video": false,
+            "vote_average": 6.8,
+            "vote_count": 323
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/mjsifKZI5gFXFp3v8RQTMAZdefP.jpg",
+            "genre_ids": [
+                878
+            ],
+            "id": 599399,
+            "original_language": "en",
+            "original_title": "After We Leave",
+            "overview": "A sci-fi drama about a man struggling to find his wife, who he abandoned six years ago, before their visa to emmigrate to an off-world colony expires.",
+            "popularity": 137.869,
+            "poster_path": "/mE2WdHdIwPdnOpfrswpvm6ZyKJu.jpg",
+            "release_date": "2019-05-20",
+            "title": "After We Leave",
+            "video": false,
+            "vote_average": 4.7,
+            "vote_count": 13
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/oj9pEWQq5higRzKWiE8f0d5hBSb.jpg",
+            "genre_ids": [
+                53,
+                27,
+                18
+            ],
+            "id": 617708,
+            "original_language": "es",
+            "original_title": "La Llorona",
+            "overview": "A tale of horror and fantasy, ripe with suspense, and an urgent metaphor of Guatemalan recent history and its unhealed political wounds.",
+            "popularity": 132.655,
+            "poster_path": "/yVsINl4Aa9vvQ9lE2LF77qNj7AP.jpg",
+            "release_date": "2019-09-06",
+            "title": "La Llorona",
+            "video": false,
+            "vote_average": 6.2,
+            "vote_count": 144
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/qtq1mai9POAX2IRGcxhVpf8f6Aj.jpg",
+            "genre_ids": [
+                27
+            ],
+            "id": 756278,
+            "original_language": "en",
+            "original_title": "Haunting of the Mary Celeste",
+            "overview": "Rachel, a concerned researcher, and her team have set out to sea to prove that the disappearance of a family and crew from a merchant ship was for reasons having to do with the supernatural. Her theory that those on the Mary Celeste vanished into a \"rift\" between dimensions proves true as the boat breaks down and her crew begins to vanish one by one.",
+            "popularity": 127.035,
+            "poster_path": "/gk179gfqaW3TV191VN7xU0dLAi.jpg",
+            "release_date": "2020-10-23",
+            "title": "Haunting of the Mary Celeste",
+            "video": false,
+            "vote_average": 6,
+            "vote_count": 12
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/AlFqBwJnokrp9zWTXOUv7uhkaeq.jpg",
+            "genre_ids": [
+                28,
+                12,
+                14,
+                878
+            ],
+            "id": 284054,
+            "original_language": "en",
+            "original_title": "Black Panther",
+            "overview": "King T'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without. Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantle to join with ex-girlfriend Nakia, the queen-mother, his princess-kid sister, members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.",
+            "popularity": 139.426,
+            "poster_path": "/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+            "release_date": "2018-02-13",
+            "title": "Black Panther",
+            "video": false,
+            "vote_average": 7.4,
+            "vote_count": 16884
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg",
+            "genre_ids": [
+                35,
+                53,
+                18
+            ],
+            "id": 496243,
+            "original_language": "ko",
+            "original_title": "기생충",
+            "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
+            "popularity": 142.463,
+            "poster_path": "/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+            "release_date": "2019-05-30",
+            "title": "Parasite",
+            "video": false,
+            "vote_average": 8.5,
+            "vote_count": 10722
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/jZ4YdDCnfK4cO13do9J4JaT8d2O.jpg",
+            "genre_ids": [
+                878,
+                27,
+                9648
+            ],
+            "id": 458305,
+            "original_language": "en",
+            "original_title": "Vivarium",
+            "overview": "A young woman and her fiancé are in search of the perfect starter home. After following a mysterious real estate agent to a new housing development, the couple finds themselves trapped in a maze of identical houses and forced to raise an otherworldly child.",
+            "popularity": 117.755,
+            "poster_path": "/myf3qzpeN0JbuFRPwSpJcz7rmAT.jpg",
+            "release_date": "2019-09-07",
+            "title": "Vivarium",
+            "video": false,
+            "vote_average": 6,
+            "vote_count": 865
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/wrqUiMXttHE4UBFMhLHlN601MZh.jpg",
+            "genre_ids": [
+                28
+            ],
+            "id": 427641,
+            "original_language": "en",
+            "original_title": "Rampage",
+            "overview": "Primatologist Davis Okoye shares an unshakable bond with George, the extraordinarily intelligent, silverback gorilla who has been in his care since birth.  But a rogue genetic experiment gone awry mutates this gentle ape into a raging creature of enormous size.  To make matters worse, it’s soon discovered there are other similarly altered animals.  As these newly created alpha predators tear across North America, destroying everything in their path, Okoye teams with a discredited genetic engineer to secure an antidote, fighting his way through an ever-changing battlefield, not only to halt a global catastrophe but to save the fearsome creature that was once his friend.",
+            "popularity": 130.01,
+            "poster_path": "/MGADip4thVSErP34FAAfzFBTZ5.jpg",
+            "release_date": "2018-04-12",
+            "title": "Rampage",
+            "video": false,
+            "vote_average": 6.4,
+            "vote_count": 5042
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/jorgjEk6a0bed6jdR5wu4S6ZvRm.jpg",
+            "genre_ids": [
+                28,
+                12,
+                14,
+                878
+            ],
+            "id": 141052,
+            "original_language": "en",
+            "original_title": "Justice League",
+            "overview": "Fuelled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne and Diana Prince assemble a team of metahumans consisting of Barry Allen, Arthur Curry and Victor Stone to face the catastrophic threat of Steppenwolf and the Parademons who are on the hunt for three Mother Boxes on Earth.",
+            "popularity": 152.854,
+            "poster_path": "/eifGNCSDuxJeS1loAXil5bIGgvC.jpg",
+            "release_date": "2017-11-15",
+            "title": "Justice League",
+            "video": false,
+            "vote_average": 6.2,
+            "vote_count": 10172
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/kSu2HaqBJSaIN6sUd0RciwNzTSe.jpg",
+            "genre_ids": [
+                18
+            ],
+            "id": 676691,
+            "original_language": "en",
+            "original_title": "The Crossroads of Hunter Wilde",
+            "overview": "Hunter Wilde is the leader of a group of Christian survivalists who are trying to live as normal as possible two years after an EMP attack and knocking all the power down. In a world of chaos living day to day has become more treacherous. But that is nothing compared to when the gates of hell are opened up and demons are commissioned to seek and destroy the remaining believers on earth. Their targets are set on Hunter. If they can break him the whole town of Crossroads will follow.",
+            "popularity": 124.609,
+            "poster_path": "/iaqCTnELPQumaMWZid93pXBxTuI.jpg",
+            "release_date": "2019-09-30",
+            "title": "The Crossroads of Hunter Wilde",
+            "video": false,
+            "vote_average": 4.7,
+            "vote_count": 3
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/64GBB3Qp1sG9AJZediJKEjUkUwI.jpg",
+            "genre_ids": [
+                28,
+                12
+            ],
+            "id": 560964,
+            "original_language": "hi",
+            "original_title": "जंगली",
+            "overview": "A vet returns home to his father's elephant reserve where he encounters and fights an international poacher's racket.",
+            "popularity": 127.268,
+            "poster_path": "/4Jwof1qQ6U99TZFkBCngBdfW8J2.jpg",
+            "release_date": "2019-03-29",
+            "title": "Junglee",
+            "video": false,
+            "vote_average": 6.5,
+            "vote_count": 65
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/fcjOngTcwB2DurqKP2vwMs6qsTl.jpg",
+            "genre_ids": [
+                28,
+                53,
+                18
+            ],
+            "id": 500922,
+            "original_language": "en",
+            "original_title": "A Score to Settle",
+            "overview": "A former mob enforcer who is released from prison after serving 22 years for a crime he didn't commit sets out on a path for revenge against the people who wronged him.",
+            "popularity": 127.294,
+            "poster_path": "/4PBwZGBP6ziKuOgHRpbVRyGoqy3.jpg",
+            "release_date": "2019-08-01",
+            "title": "A Score to Settle",
+            "video": false,
+            "vote_average": 6.2,
+            "vote_count": 298
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/9nm3eQY0FiPL391vlQrr4Q5WC9w.jpg",
+            "genre_ids": [
+                27,
+                80,
+                18
+            ],
+            "id": 516632,
+            "original_language": "en",
+            "original_title": "The Empty Man",
+            "overview": "After a group of teens from a small Midwestern town begin to mysteriously disappear, the locals believe it is the work of an urban legend known as The Empty Man. As a retired cop investigates and struggles to make sense of the stories, he discovers a horrific secret that puts his life—and the lives of those close to him—in grave danger.",
+            "popularity": 106.911,
+            "poster_path": "/8apzu9JFTUMtOpYkHk6LNPOs3pY.jpg",
+            "release_date": "2020-10-22",
+            "title": "The Empty Man",
+            "video": false,
+            "vote_average": 6.6,
+            "vote_count": 87
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/zphhP17YnyrihDBYdd1qxvI3ZSl.jpg",
+            "genre_ids": [
+                27,
+                53,
+                18
+            ],
+            "id": 741998,
+            "original_language": "it",
+            "original_title": "Il legame",
+            "overview": "While visiting her fiancé's mother in southern Italy, a woman must fight the mysterious and malevolent curse intent on claiming her daughter.",
+            "popularity": 117.773,
+            "poster_path": "/k8Oj2YlFKbwj1SNKZcb5Fw1Yosj.jpg",
+            "release_date": "2020-10-02",
+            "title": "The Binding",
+            "video": false,
+            "vote_average": 5.5,
+            "vote_count": 143
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/htBUhLSS7FfHtydgYxUWjL3J1Q1.jpg",
+            "genre_ids": [
+                16,
+                12,
+                10751,
+                14
+            ],
+            "id": 560050,
+            "original_language": "en",
+            "original_title": "Over the Moon",
+            "overview": "In this animated musical, a girl builds a rocket ship and blasts off, hoping to meet a mythical moon goddess.",
+            "popularity": 136.7,
+            "poster_path": "/lQfdytwN7eh0tXWjIiMceFdBBvD.jpg",
+            "release_date": "2020-10-16",
+            "title": "Over the Moon",
+            "video": false,
+            "vote_average": 7.5,
+            "vote_count": 704
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/kwUQFeFXOOpgloMgZaadhzkbTI4.jpg",
+            "genre_ids": [
+                878,
+                28,
+                12
+            ],
+            "id": 24428,
+            "original_language": "en",
+            "original_title": "The Avengers",
+            "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+            "popularity": 159.737,
+            "poster_path": "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+            "release_date": "2012-04-25",
+            "title": "The Avengers",
+            "video": false,
+            "vote_average": 7.7,
+            "vote_count": 24099
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/pO1SnM5a1fEsYrFaVZW78Wb0zRJ.jpg",
+            "genre_ids": [
+                10751,
+                16,
+                12,
+                35,
+                10770
+            ],
+            "id": 677638,
+            "original_language": "en",
+            "original_title": "We Bare Bears: The Movie",
+            "overview": "When Grizz, Panda, and Ice Bear's love of food trucks and viral videos get out of hand, the brothers are chased away from their home and embark on a trip to Canada, where they can live in peace.",
+            "popularity": 130.455,
+            "poster_path": "/kPzcvxBwt7kEISB9O4jJEuBn72t.jpg",
+            "release_date": "2020-06-30",
+            "title": "We Bare Bears: The Movie",
+            "video": false,
+            "vote_average": 7.8,
+            "vote_count": 618
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/2l5UHZBcp9cx1PwKLdisJ0gV9jB.jpg",
+            "genre_ids": [
+                16,
+                35,
+                14,
+                12
+            ],
+            "id": 808,
+            "original_language": "en",
+            "original_title": "Shrek",
+            "overview": "It ain't easy bein' green -- especially if you're a likable (albeit smelly) ogre named Shrek. On a mission to retrieve a gorgeous princess from the clutches of a fire-breathing dragon, Shrek teams up with an unlikely compatriot -- a wisecracking donkey.",
+            "popularity": 132.236,
+            "poster_path": "/iB64vpL3dIObOtMZgX3RqdVdQDc.jpg",
+            "release_date": "2001-05-18",
+            "title": "Shrek",
+            "video": false,
+            "vote_average": 7.6,
+            "vote_count": 11940
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/tudjLo45nZhlJTTOlYVOxvR8C1o.jpg",
+            "genre_ids": [
+                18
+            ],
+            "id": 695568,
+            "original_language": "en",
+            "original_title": "Finding Grace",
+            "overview": "A struggling family, already on the verge of disintegration, faces new challenges that will test their faith in God and each other.",
+            "popularity": 123.211,
+            "poster_path": "/d7LKwASjH0rgbSIz0eqUbzHZWe3.jpg",
+            "release_date": "2020-04-21",
+            "title": "Finding Grace",
+            "video": false,
+            "vote_average": 6.8,
+            "vote_count": 11
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/lkeBhXGJFRlhI7cBWn8LQQAdZqK.jpg",
+            "genre_ids": [
+                16,
+                878,
+                35,
+                10402,
+                10751,
+                12
+            ],
+            "id": 594328,
+            "original_language": "en",
+            "original_title": "Phineas and Ferb The Movie: Candace Against the Universe",
+            "overview": "Phineas and Ferb travel across the galaxy to rescue their older sister Candace, who has been abducted by aliens and taken to a utopia in a far-off planet, free of her pesky little brothers.",
+            "popularity": 143.808,
+            "poster_path": "/n6hptKS7Y0ZjkYwbqKOK3jz9XAC.jpg",
+            "release_date": "2020-08-28",
+            "title": "Phineas and Ferb The Movie: Candace Against the Universe",
+            "video": false,
+            "vote_average": 7.6,
+            "vote_count": 226
+        }
+    ]

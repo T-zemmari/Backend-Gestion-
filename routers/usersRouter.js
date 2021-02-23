@@ -2,7 +2,7 @@ const routerUser = require('express').Router();
 const userController = require('../Controller/usersController')
 const userSchema = require('../models/usersDb')
 
-// API routes
+
 routerUser.get('/VideoClub/user', async (req, res) => {
     try {
         res.json(await userController.findAllUser())
@@ -28,10 +28,10 @@ routerUser.get('/VideoClub/user/:id',async (req, res) => {
 
 routerUser.post('/VideoClub/user',async (req, res) => {
    try{
-    let id1=req.params.id
+   
         const id = await userController.addUser(new userSchema(req.body));
         const status = 'success';
-        res.json({status,id1});
+        res.json({status,id});
     } catch( error ){
         return res.sendStatus(500).json({
             message: 'Internal Server Error'
@@ -65,5 +65,7 @@ routerUser.delete('/VideoClub/user/:id/remove', async (req, res) => {
     }
  
  });
+
+
 
 module.exports = routerUser;

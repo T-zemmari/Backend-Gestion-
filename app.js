@@ -3,8 +3,9 @@ const logger=(log)=>{console.log(new Date, log)}
 const express = require('express');
 const bodyparser = require('body-parser');
 const mongoose=require('mongoose');
-const routerFilms = require('./routers/moviesRoutes')
+const routerFilms = require('./routers/moviesRouter')
 const routerUser=require('./routers/usersRouter')
+const routerOrder = require('./routers/orderRouter')
 
 
 const app = express();
@@ -16,6 +17,7 @@ app.use(express.json())
 
 app.use(routerFilms);
 app.use(routerUser);
+app.use(routerOrder);
 
 
 // Aqui vamos a lanzar el servidor tanto el express como el mongodb

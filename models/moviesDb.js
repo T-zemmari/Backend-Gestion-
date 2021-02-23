@@ -18,13 +18,13 @@ const movieSchema = new Schema({
         type: String
        
     },
-    image: { 
+    poster_path: { 
         type: String 
        
     },
-    
-    year: { 
-        type: Number 
+
+    release_date: { 
+        type: String
 
     },
     country: { 
@@ -33,6 +33,8 @@ const movieSchema = new Schema({
     description: { 
         type: String 
     },
+    vote_average: Number,
+    vote_count: Number,
     
     genre: { 
         type: String, 

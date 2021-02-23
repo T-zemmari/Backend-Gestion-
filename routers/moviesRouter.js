@@ -2,7 +2,7 @@ const routerFilms = require('express').Router();
 const movieController = require('../Controller/moviesController')
 const movieSchema = require('../models/moviesDb')
 
-// API routes
+
 routerFilms.get('/VideoClub/movie', async (req, res) => {
     try {
         res.json(await movieController.findAllFilms())
@@ -28,7 +28,7 @@ routerFilms.get('/VideoClub/movie/:id',async (req, res) => {
 
 routerFilms.post('/VideoClub/movie',async (req, res) => {
     try{
-        const id = await movieController.addFilm(new movieSchema(req.body));
+        const id = await movieController.addFilm((req.body));
         const status = 'success';
         res.json({status,id});
     } catch( error ){
