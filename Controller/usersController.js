@@ -1,6 +1,11 @@
 const mongoose = require('mongoose');
 const user = require('../models/usersDb');
 const Rental = require('../models/ordersDb')
+const Movie = require('../models/moviesDb')
+
+
+
+
 class User {
     constructor() {
 
@@ -15,9 +20,11 @@ class User {
     async findById(id) {
         return user.findById(id);
     }
+   
 
     
     async addUser(usuario) {
+        user.password = await bcrypt.hash(user.password, 6);
             return user.create(usuario)
         }
        
@@ -30,17 +37,28 @@ class User {
        
         return user.findByIdAndRemove(id)
     }
-    async rentMovie(userId,movieId){
+    async rentMovie(userid,movieID){
       //let dayNumber = moment(Range[0].diff(Range[1].days());
-        return Rental.create({
-        userCostumerID : userid,
-        movieID : Movie.id,
-        RentalDateInit:Range[0],
-        RenatDateEnd:Range[1],
-          //  precio :Movie.dailyPrice * daysNumber
+        
+       return Rental.create({
+        userid : {
+            name:ObjectId.name,
+            adress: ObjectId.address,
+            phone:ObjectId.phone
+        },
+        movieID : {
+          title:ObjectId.title
+
+         },
+       //  titulo:Movie.title,
+       // RentalDateInit:Range[0],
+       // RenatDateEnd:Range[1],
+        //precio :Movie.dailyPrice * daysNumber
 
         })
+       
     }
+
 }
 
 let userController = new User();

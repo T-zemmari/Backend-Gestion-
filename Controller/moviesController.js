@@ -21,6 +21,9 @@ class Film {
         return Movie.findById(id);
     };
 
+    async searchByTitle(Title){
+         return Movie.find({Title})
+    }
    
     async addFilm(Peli){
        return Movie.create(Peli)

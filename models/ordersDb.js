@@ -1,5 +1,5 @@
 const mongoose= require('mongoose');
-const ObjectId = mongoose.Types.ObjectId
+const ObjectId = mongoose.Types.ObjectId;
 const Schema = mongoose.Schema;
 const user = require('./usersDb')
 const movie = require('./moviesDb')
@@ -8,14 +8,16 @@ let orderSchema = new Schema;
 
   orderSchema={
 
-    userCostumerID:
-        {type: ObjectId,
+        ownerId:
+    {type: ObjectId,
+        ref:'User',
         required :true
     },
     
-    movieID:
+    movieId:
     {type: ObjectId,
-       requierd:true
+        ref:'Movie',
+       required:true
       },
       
     PedidoID:String,
@@ -42,5 +44,5 @@ let orderSchema = new Schema;
 
 
 
-  const Order = mongoose.model('Order', orderSchema);
+  const Order = mongoose.model('Rental', orderSchema);
   module.exports = Order;

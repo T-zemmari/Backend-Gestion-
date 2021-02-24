@@ -3,6 +3,24 @@ const orderController = require('../Controller/orderController')
 const orderSchema = require('../models/ordersDb')
 
 
+routerOrder.post('/',async (req, res) => {
+    try{
+        const wait = await orderController.rentMovie(req.body.ownerId,req.body.movieId);
+    
+        const status = 'success';
+        res.json({status,wait});
+    } catch( error ){
+        return res.sendStatus(500).json({
+            message: 'No se que estas haciendo'
+        });
+    }
+})
+
+
+
+
+
+
 routerOrder.get('/VideoClub/order', async (req, res) => {
     try {
         res.json(await orderController.findAllOrders())
@@ -26,7 +44,7 @@ routerOrder.get('/VideoClub/order/:id',async (req, res) => {
     }
 });
 
-routerOrder.post('/VideoClub/order',async (req, res) => {
+/*routerOrder.post('/VideoClub/order',async (req, res) => {
     try{
         const esperaLaOrden = await orderController.addOrder((req.body));
     
@@ -37,7 +55,7 @@ routerOrder.post('/VideoClub/order',async (req, res) => {
             message: 'Internal Server Error'
         });
     }
-})
+})*/
 
 routerOrder.put('/VideoClub/order/:id/update',async (req,res) => {
         try{

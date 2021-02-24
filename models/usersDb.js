@@ -12,6 +12,9 @@ const userSchema = new Schema({
         
         
     },
+    lastName:{
+        type:String
+    },
 
     creationDate: {
         type: Date,
@@ -19,17 +22,18 @@ const userSchema = new Schema({
         
     },
     birthDate: { 
-        type: String,
-        
-
-        
+        type: String   
     },
     email: {
         type: String,
+        required:true
         
     },
 
-    password:String,
+    password:{String,
+    
+    },
+
     phone: { 
         type: String,
         

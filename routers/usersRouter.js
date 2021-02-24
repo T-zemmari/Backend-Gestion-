@@ -39,6 +39,22 @@ routerUser.post('/VideoClub/user',async (req, res) => {
         });
    }
 })
+routerUser.post('/VideoClub/user/:id/orders',async (req, res) => {
+    try{
+       // const userid= req.body.id;
+        //const movieID = req.body.id;
+         const id = await userController.rentMovie(req.body);
+         //const status = 'success';
+         res.json({status,id});
+     } catch( error ){
+         return res.sendStatus(500).json({
+             message: 'Internal Server Error'
+         });
+    }
+ })
+ 
+
+
 
 routerUser.put('/VideoClub/user/:id/update',async (req,res) => {
     try{

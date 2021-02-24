@@ -1,12 +1,28 @@
 const mongoose = require('mongoose');
 const Order = require('../models/ordersDb');
+const User = require('../models/usersDb')
+const Movie = require('../models/moviesDb')
 
 
-class Peticion {
+class Rental {
 
     constructor(){
 
     }
+
+    async rentMovie(ownerId,movieId) {
+        const usuario = await User.findById(ownerId);
+        const pelicula = await Movie.findById(movieId)
+        if(!usuario || !pelicula){
+            throw new Error('vaya me pego un tiro mejor')
+        }
+       
+       return await Order.create({
+            ownerId: ownerId,
+            movieId: movieId
+          
+        });
+    };
 
 
 
@@ -24,9 +40,9 @@ class Peticion {
 
    
     
-     addOrder(order){
-       return Order.create(order)
-    };
+    // addOrder(order){
+     //  return Order.create(order)
+    //};
 
     
 
@@ -42,5 +58,5 @@ class Peticion {
     };
 };
 
-let orderController = new Peticion();
+let orderController = new Rental();
 module.exports = orderController;

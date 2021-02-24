@@ -3,6 +3,26 @@ const movieController = require('../Controller/moviesController')
 const movieSchema = require('../models/moviesDb')
 
 
+
+routerFilms.post('/VideoClub/movie/search',async (req, res) => {
+    try {
+        const {  title } = req.body;
+       // console.log(titulo);
+        const findAllFilms =await movieController.searchByTitle(title);
+        res.json(findAllFilms);
+      }catch (err) {
+        return res.sendStatus(500).json({
+            message: 'Internal Server Error'
+        });
+    }
+});
+
+
+
+
+
+
+
 routerFilms.get('/VideoClub/movie', async (req, res) => {
     try {
         res.json(await movieController.findAllFilms())
@@ -25,6 +45,8 @@ routerFilms.get('/VideoClub/movie/:id',async (req, res) => {
         });
     }
 });
+
+
 
 routerFilms.post('/VideoClub/movie',async (req, res) => {
     try{
