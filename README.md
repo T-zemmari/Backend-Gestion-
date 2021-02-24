@@ -1,40 +1,49 @@
-PRIMER PROYECTO EN BACKEND
-ABOUT:
-Este es como el titulo indica, mi primer proyecto en BACKEND. Es una API RESTFULL de mi VideoClub que contiene como cualquier videoclub: Usuarios, Películas y Pedidos.
+# PRIMER PROYECTO EN BACKEND
 
-USAGE:
+
+##ABOUT:
+Este es como el titulo indica, mi primer proyecto en BACKEND.
+Es una API RESTFULL de mi VideoClub que contiene como cualquier videoclub:
+Usuarios, Películas y Pedidos.
+
+
+##USAGE:
+
 DESCARGA DEL REPO:
 
-Repository
+[Repository](https://github.com/T-zemmari/Backend-Gestion-De-Usuarios-Peliculas-Y-pedidos)
 
-Requisitos: Cualquier IDE , yo uso Visual Studio Code.
+Requisitos:
+Cualquier IDE , yo uso Visual Studio Code.
+
 
 Para levantar el servidor de mongo:
 
 Primero escribe este comando en tu terminal.
+>docker run -rm -p 27017:27017 mongo
 
-docker run -rm -p 27017:27017 mongo
+###START
+> npm i
 
-START
-npm i
+>npm start
 
-npm start
 
 Si tienes algún tipo de error de conexión , recomiendo instalar las librerías:
 
 Express :
 
-npm i express
+> npm i express
 
 Mongoose:
 
-npm i mongoose
+>npm i mongoose
 
-También mi consejo es utilizar nodemon, para no tener reconectarte al puerto cada vez que haces una modificación. Si por cualquier motivo no te funciona reinstalala:
+También mi consejo es utilizar nodemon, para no tener reconectarte al  puerto  cada vez que haces una modificación.
+Si por cualquier motivo no te funciona reinstalala:
 
-npm i nodemon
+> npm i nodemon
 
-API REST
+###API REST
 Resources:
 
 /user
@@ -43,18 +52,22 @@ Resources:
 
 /order
 
-Metod CRUD:
-get /
+#####Metod CRUD:
 
-post /
 
-put /:id/update
 
-delete /:id
+>get   /
 
-Yo uso Postman para comprobar el buen funcionamiento de la API,
-Dejo el link por Aqui, :
+>post  /
 
-Run in Postman
+>put  /:id/update
 
-License :--MIT--
+>delete  /:id
+
+##Yo uso Postman para comprobar el buen funcionamiento de la API,
+Dejo el link por Aqui, : 
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/4a1748774181674f4183)
+
+##License :--MIT--
+
