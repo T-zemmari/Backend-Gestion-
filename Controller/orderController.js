@@ -17,11 +17,14 @@ class Peticion {
    
 
     async findById(id) {
+        
         return Order.findById(id);
+
     };
 
    
-    async addOrder(order){
+    
+     addOrder(order){
        return Order.create(order)
     };
 

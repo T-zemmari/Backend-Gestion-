@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const user = require('../models/usersDb');
-
+const Rental = require('../models/ordersDb')
 class User {
     constructor() {
 
@@ -29,6 +29,17 @@ class User {
     async deleteUser(id) {
        
         return user.findByIdAndRemove(id)
+    }
+    async rentMovie(userId,movieId){
+      //let dayNumber = moment(Range[0].diff(Range[1].days());
+        return Rental.create({
+        userCostumerID : userid,
+        movieID : Movie.id,
+        RentalDateInit:Range[0],
+        RenatDateEnd:Range[1],
+          //  precio :Movie.dailyPrice * daysNumber
+
+        })
     }
 }
 

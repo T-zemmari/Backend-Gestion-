@@ -16,9 +16,9 @@ routerOrder.get('/VideoClub/order', async (req, res) => {
 
 routerOrder.get('/VideoClub/order/:id',async (req, res) => {
     try {
-        let id2=req.params.id
-        console.log(id2);
-        res.json(await orderController.findById(id2))
+        let id1=req.params.id
+        
+        res.json(await orderController.findById(id1))
     }catch (err) {
         return res.sendStatus(500).json({
             message: 'Internal Server Error'
@@ -28,9 +28,10 @@ routerOrder.get('/VideoClub/order/:id',async (req, res) => {
 
 routerOrder.post('/VideoClub/order',async (req, res) => {
     try{
-        const id = await orderController.addOrder((req.body));
+        const esperaLaOrden = await orderController.addOrder((req.body));
+    
         const status = 'success';
-        res.json({status,id});
+        res.json({status,esperaLaOrden});
     } catch( error ){
         return res.sendStatus(500).json({
             message: 'Internal Server Error'

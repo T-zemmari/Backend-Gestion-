@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const ObjectId = mongoose.Types.ObjectId;
+const bcrypt = require('bcryptjs');
 
 const userSchema = new Schema({
     id: { 
@@ -27,6 +28,8 @@ const userSchema = new Schema({
         type: String,
         
     },
+
+    password:String,
     phone: { 
         type: String,
         

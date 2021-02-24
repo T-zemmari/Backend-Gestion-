@@ -1,6 +1,7 @@
 const routerUser = require('express').Router();
 const userController = require('../Controller/usersController')
 const userSchema = require('../models/usersDb')
+const bcrypt = require('bcryptjs');
 
 
 routerUser.get('/VideoClub/user', async (req, res) => {
@@ -28,8 +29,8 @@ routerUser.get('/VideoClub/user/:id',async (req, res) => {
 
 routerUser.post('/VideoClub/user',async (req, res) => {
    try{
-   
-        const id = await userController.addUser(new userSchema(req.body));
+    
+        const id = await userController.addUser(req.body);
         const status = 'success';
         res.json({status,id});
     } catch( error ){

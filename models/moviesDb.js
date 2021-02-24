@@ -2,10 +2,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const ObjectId = mongoose.Types.ObjectId;
 
+
 const movieSchema = new Schema({
     
     creationDate: {
-        type: Date,
+        type: String,
         default: new Date
     },
      

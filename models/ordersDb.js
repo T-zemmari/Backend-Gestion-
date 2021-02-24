@@ -1,26 +1,35 @@
 const mongoose= require('mongoose');
-const objectId = mongoose.Types.ObjectId
+const ObjectId = mongoose.Types.ObjectId
 const Schema = mongoose.Schema;
+const user = require('./usersDb')
+const movie = require('./moviesDb')
 
 let orderSchema = new Schema;
 
   orderSchema={
 
-    userID:String,
+    userCostumerID:
+        {type: ObjectId,
+        required :true
+    },
     
-    movieID:String,
+    movieID:
+    {type: ObjectId,
+       requierd:true
+      },
       
-    PedidoID:objectId,
+    PedidoID:String,
            
     
-    DiaDelAlquiler:{
+    RentalDateInit:{
             Type:Date,
           
     },
-    DiaDeLaDevolucion:{
+    RenatDateEnd:{
             Type: Date,
          
-    }
+    },
+    PrecioPorDia:Number,
     
     //payment:{
        // Type: ['cash','paypal','card'],
