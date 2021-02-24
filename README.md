@@ -69,5 +69,23 @@ Dejo el link por Aqui, :
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/4a1748774181674f4183)
 
+
+###Herramientas utilizadas:
+
+>-javascript 
+
+>-nodejs
+
+>-Mongodb
+
+>-Express
+
+>-Mongoose
+
+>-Nodemon
+
+>-Et moi-
+
+
 ##License :--MIT--
 
