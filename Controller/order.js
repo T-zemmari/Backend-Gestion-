@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const Order = require('../models/ordersDb');
-const User = require('../models/usersDb')
-const Movie = require('../models/moviesDb')
+const Order = require('../models/order-db');
+const User = require('../models/user-db')
+const Movie = require('../models/movies-db')
 
 
 class Rental {

@@ -1,6 +1,6 @@
 const routerFilms = require('express').Router();
-const movieController = require('../Controller/moviesController')
-const movieSchema = require('../models/moviesDb')
+const movieController = require('../Controller/movies')
+const movieSchema = require('../models/movies-db')
 
 
 

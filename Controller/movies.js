@@ -1,6 +1,6 @@
 
 const mongoose = require('mongoose');
-const Movie = require('../models/moviesDb');
+const Movie = require('../models/movies-db');
 
 
 class Film {

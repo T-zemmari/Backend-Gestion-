@@ -1,8 +1,8 @@
 const mongoose= require('mongoose');
 const ObjectId = mongoose.Types.ObjectId;
 const Schema = mongoose.Schema;
-const user = require('./usersDb')
-const movie = require('./moviesDb')
+const user = require('./user-db')
+const movie = require('./movies-db')
 
 let orderSchema = new Schema;
 

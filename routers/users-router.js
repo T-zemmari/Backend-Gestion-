@@ -1,6 +1,6 @@
 const routerUser = require('express').Router();
-const userController = require('../Controller/usersController')
-const userSchema = require('../models/usersDb')
+const userController = require('../Controller/users')
+const userSchema = require('../models/user-db')
 const bcrypt = require('bcryptjs');
 
 

@@ -1,6 +1,6 @@
 const routerOrder = require('express').Router();
-const orderController = require('../Controller/orderController')
-const orderSchema = require('../models/ordersDb')
+const orderController = require('../Controller/order')
+const orderSchema = require('../models/order-db')
 
 
 routerOrder.post('/',async (req, res) => {

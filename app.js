@@ -3,10 +3,10 @@ const logger=(log)=>{console.log(new Date, log)}
 const express = require('express');
 const bodyparser = require('body-parser');
 const mongoose=require('mongoose');
-const routerFilms = require('./routers/moviesRouter')
-const routerUser=require('./routers/usersRouter')
-const routerOrder = require('./routers/orderRouter')
-
+const routerFilms = require('./routers/movies-router');
+const routerUser=require('./routers/users-router');
+const routerOrder = require('./routers/order-router');
+const conectDbExpress = require('./conect-db-express');
 
 const app = express();
 const port =process.env.Port || 3000;
@@ -47,62 +47,7 @@ mongoose.connect(QUERY_STRING, {useNewUrlParser: true, useUnifiedTopology: true}
 
 
 
-/*
-app.use(bodyparser.urlencoded({extended:false}));
-app.use(bodyparser.json())
-//app.get('/',(req,res)=>{res.send("Hola De ///momento estoy aqui !!!!!!") });
-app.use(express.json());
 
-
-app.get('/api/user/',(req,res)=>{
-     usuario.find({},(err,users)=>{
-         if(err) return  res.status(500).send({mensaje : 'se ha producido un error del servidor lo sentimos'})
-         res.status(200).send({users:users})
-     })
-   
-})
-app.get('/api/user/:id',(req,res)=>{
-    
-    
-})
-
-
-
-
-app.post('/api/user/',(req,res)=>{
-    console.log(req.body);
-    res.status(200).send(req.body);
-
-    let usuario = new User();
-    
-    //user.date=req.body.date
-    usuario.name=req.body.name
-    usuario.lastName=req.body.lastName
-    usuario.surName=req.body.surName
-    usuario.email=req.body.email
-    usuario.address=req.body.address
-    usuario.birthday=req.body.birthday
-    usuario.phone=req.body.phone
-    
-
-   usuario.save((error,usuarioStored)=>{
-       if(error){
-           res.status(500).send({mensaje:'error al salvar'});
-       }
-       res.status(200).send({usuario:usuarioStored});
-   })
-})
-
-
-app.put('/api/user/:id',(req,res)=>{
-    res.status(200).send('id modificado')
-})
-
-app.delete('/api/user/:id',(req,res)=>{
-    res.status(200).send('id eliminado')
-})
-
-*/
 
 
 
